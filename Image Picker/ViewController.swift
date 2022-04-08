@@ -6,14 +6,18 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UIImagePickerControllerDelegate
+{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBAction func experiment(_ sender: Any) {
 
+        let nextController = UIImagePickerController()
+        self.present(nextController, animated: true, completion: nil)
+    }
 
+    
 }
-
