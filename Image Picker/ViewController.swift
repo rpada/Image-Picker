@@ -9,7 +9,7 @@ import UIKit
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
                       UINavigationControllerDelegate, UITextFieldDelegate
 {
-
+    @IBOutlet weak var Camera: UIToolbar!
     @IBOutlet weak var PickImage: UIToolbar!
     @IBOutlet weak var TopText: UITextField!
     @IBOutlet weak var BottomText: UITextField!
@@ -26,6 +26,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         TopText.defaultTextAttributes = memeTextAttributes
         BottomText.defaultTextAttributes = memeTextAttributes
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
     }
     
     @IBAction func pickAnImage(_ sender: Any) {

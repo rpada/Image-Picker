@@ -16,17 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yh3-MO-Fdl">
-                                <rect key="frame" x="0.0" y="804" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Photo Album" id="BZE-zG-4RA">
-                                        <connections>
-                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="PPO-qs-rkl"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gb7-zb-EZa">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,13 +32,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHl-8p-h5s">
+                                <rect key="frame" x="0.0" y="806" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Photo Album" id="aXs-hx-G3M"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="BottomText" destination="uW8-nI-hkt" id="8te-af-Ufe"/>
-                        <outlet property="PickImage" destination="yh3-MO-Fdl" id="ctI-Iq-6RJ"/>
+                        <outlet property="PickImage" destination="aXs-hx-G3M" id="aK2-yd-aoL"/>
                         <outlet property="TopText" destination="JFh-gH-V7c" id="xnk-wO-jUe"/>
                         <outlet property="imagePickerView" destination="Gb7-zb-EZa" id="KW9-jF-DMg"/>
                     </connections>
